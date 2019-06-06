@@ -42,6 +42,6 @@ deploy:
 notifications:
   email:
     recipients:
-      - jarkko.toivonen@cs.helsinki.fi
+      - saska@cs.helsinki.fi
     on_success: always
     on_failure: always
