@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Data analysis with Python - Spring 2019'
+project = 'Data analysis with Python - Summer 2019'
 copyright = '2018-2019, Jarkko Toivonen'
-author = 'Jarkko Toivonen'
+author = 'Jarkko Toivonen, Saska Dönges'
 
 # The short X.Y version
 version = ''
@@ -180,10 +180,10 @@ nbsphinx_prolog = r"""
     .. nbinfo::
 
         This page was generated from `{{ docname2 }}`__.
-        :raw-html:`<br/><a href='https://colab.research.google.com/github/jttoivon/data-analysis-with-python-spring-2019/blob/master/{{ docname2 }}'><img align='left' src='https://colab.research.google.com/assets/colab-badge.svg' alt='Open in Colab' title='Open and Execute in Google Colaboratory' /></a>`
+        :raw-html:`<br/><a href='https://colab.research.google.com/github/jttoivon/data-analysis-with-python-summer-2019/blob/master/{{ docname2 }}'><img align='left' src='https://colab.research.google.com/assets/colab-badge.svg' alt='Open in Colab' title='Open and Execute in Google Colaboratory' /></a>`
         :raw-html:`<br/>`
 
-    __ https://github.com/jttoivon/data-analysis-with-python-spring-2019/blob/master/{{ docname2 }}
+    __ https://github.com/saskeli/data-analysis-with-python-summer-2019/blob/master/{{ docname2 }}
 
 """
 

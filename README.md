@@ -1,8 +1,10 @@
-# Data analysis with Python - Spring 2019
+# Data analysis with Python - Summer 2019
 
 ## Authors
 
 Materials created by [Jarkko Toivonen](https://github.com/jttoivon).
+
+Updated and maintained by [Saska Dögnes](https://github.com/saskeli).
 
 # License
 
@@ -28,7 +30,7 @@ The html pages will be stored under `_build/html/` folder.
 
 Create a new branch for your repository with name `gh-pages`.
 This is where the html pages will be stored.
-They will be visible at `https://<account>.github.io/data-analysis-with-python-spring-2019/`
+They will be visible at `https://<account>.github.io/data-analysis-with-python-summer-2019/`
 
 GitHub can be instructed to notify Travis CI every time something is
 pushed to the git repository. Travis will then pull the most recent versions
