@@ -66,7 +66,7 @@ Sequence analysis
 Complete the exercises of the project like normal weekly exercises.
 
 Copy the file ``project_notebook_sequence_analysis.ipynb`` to folder
-``hy-data-analysis-with-python-spring-2019``,
+``hy-data-analysis-with-python-summer-2019``,
 where your solutions are. Start Jupyter with
 ``jupyter-notebook project_notebook_sequence_analysis.ipynb``.
 Fill in the missing boxes. Run all cells; it should find the source code
@@ -123,7 +123,7 @@ Regression analysis
 -------------------
 
 Go to a temporary working area (like ``/tmp`` on Unix) so you don't accidentally overwrite
-your own solutions. Run ``tmc download -a hy-data-analysis-with-python-spring-2019``
+your own solutions. Run ``tmc download -a hy-data-analysis-with-python-summer-2019``
 to get the tests. Store student's notebook to file
 ``part08-e01_regression/src/project_notebook_regression_analysis.ipynb``.
 Run the tests using ``tmc test part08-e01_regression``.
@@ -132,9 +132,9 @@ Sequence analysis
 -------------------
 
 Go to a temporary working area (like ``/tmp`` on Unix) so you don't accidentally overwrite
-your own solutions. Run ``tmc download -a hy-data-analysis-with-python-spring-2019``
+your own solutions. Run ``tmc download -a hy-data-analysis-with-python-summer-2019``
 to get the tests. Store student's notebook to file
-``hy-data-analysis-with-python-spring-2019/project_notebook_sequence_analysis.ipynb``.
+``hy-data-analysis-with-python-summer-2019/project_notebook_sequence_analysis.ipynb``.
 In the same folder as the notebook, download and save the script
 `split-bio-sequence-notebook-into-files.py <https://www.cs.helsinki.fi/u/jttoivon/dap/split-bio-sequence-notebook-into-files.py>`__ (version 2), which will extract the solutions
 from notebook to files.

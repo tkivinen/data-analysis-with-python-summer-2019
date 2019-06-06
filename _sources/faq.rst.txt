@@ -118,7 +118,7 @@ issue. If the problem persists, make a bug report in:
 
 * Telegram: `https://t.me/dap19s <https://t.me/dap19s>`__
 
-* Github `issues <https://github.com/jttoivon/data-analysis-with-python-spring-2019/issues>`__
+* Github `issues <https://github.com/saskeli/data-analysis-with-python-summer-2019/issues>`__
 
 * Give feedback, when using ``tmc submit``
 

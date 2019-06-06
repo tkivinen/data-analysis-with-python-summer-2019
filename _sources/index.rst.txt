@@ -77,41 +77,6 @@ as Part 1, Part 2, etc. Each part gives one point.
 It is possible to submit, and get points for,
 an exercise you have completed at least partly.
 You can check your points from the `TMC server <https://tmc.mooc.fi/org/hy/courses/438>`__.
-.. The deadlines, shown below, are hard and no exceptions will be made,
-   so finish and submit your solutions early.
-
-.. Teaching workshop (pajaopetus) will be held weekly in Exactum building
-   in Kumpula in room B221 on Thurdays 10.00 - 12.00 (14.3. - 5.5.).
-
-.. +------+-----------------+-----------------+----------------------+
-   | Week | Deadline        | Points required | Theme                |
-   +======+=================+=================+======================+
-   | 1    | 18.3.2019 23.59 |     80%         | Basics of Python I   |
-   +------+-----------------+-----------------+----------------------+
-   | 2    | 25.3.2019 23.59 |     80%         | Basics of Python II, |
-   |      |                 |                 | NumPy I              |
-   +------+-----------------+-----------------+----------------------+
-   | 3    | 1.4.2019 23.59  |     80%         | NumPy II,            |
-   |      |                 |                 | Visualization,       |
-   |      |                 |                 | Image processing,    |
-   |      |                 |                 | Data Analysis        |
-   |      |                 |                 | with Pandas I        |
-   +------+-----------------+-----------------+----------------------+
-   | 4    | 8.4.2019 23.59  |     75%         | Data Analysis        |
-   |      |                 |                 | with Pandas II       |
-   +------+-----------------+-----------------+----------------------+
-   | 5    | 15.4.2019 23.59 |     70%         | Data Analysis        |
-   |      |                 |                 | with Pandas III,     |
-   |      |                 |                 | Machine learning I   |
-   +------+-----------------+-----------------+----------------------+
-   | 6    | 29.4.2019 23.59 |     65%         | Machine learning II, |
-   |      |                 |                 | Project              |
-   +------+-----------------+-----------------+----------------------+
-   | 7    | 6.5.2019 23.59  |                 | Project continues    |
-   +------+-----------------+-----------------+----------------------+
-   | 8    | 13.5.2019 23.59 |                 | Peer review,         |
-   |      |                 |                 | Exam                 |
-   +------+-----------------+-----------------+----------------------+
 
 Discussion forum
 ----------------
