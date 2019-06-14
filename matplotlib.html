@@ -370,9 +370,7 @@ This page was generated from <a class="reference external" href="https://github.
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># This is needed so that the plotted figures appear embedded in this notebook:</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
@@ -393,10 +391,12 @@ This page was generated from <a class="reference external" href="https://github.
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>                <span class="c1"># plot the points in the array a</span>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>                   <span class="c1"># plot the points in the array a</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"My first figure"</span><span class="p">)</span>  <span class="c1"># Add a title to the figure</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"My x-axis"</span><span class="p">)</span>    <span class="c1"># Give a label to the x-axis</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"My y-axis"</span><span class="p">);</span>    <span class="c1"># Give a label to the y-axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"My x-axis"</span><span class="p">)</span>       <span class="c1"># Give a label to the x-axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"My y-axis"</span><span class="p">)</span>       <span class="c1"># Give a label to the y-axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                    <span class="c1"># Tell matplotlib to output the figure.</span>
+                              <span class="c1"># Not strictly required (but a bit neater).</span>
 </pre></div>
 </div>
 </div>
@@ -429,7 +429,8 @@ This page was generated from <a class="reference external" href="https://github.
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>          <span class="c1"># top left</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>     <span class="c1"># top right</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>    <span class="c1"># bottom left</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">));</span>  <span class="c1"># bottom right</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>  <span class="c1"># bottom right</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -448,6 +449,31 @@ This page was generated from <a class="reference external" href="https://github.
 <img alt="_images/matplotlib_12_1.png" src="_images/matplotlib_12_1.png"/>
 </div>
 </div>
+<p>If you don’t want to mess around with axes you can direct all your calls to pyplot (in a more matlabby way) like so:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>    <span class="c1"># Note the 1-indexing of subplots.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/matplotlib_14_0.png" src="_images/matplotlib_14_0.png"/>
+</div>
+</div>
 <p>Note that in this notebook we have used both the function <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> and the similar method <code class="docutils literal notranslate"><span class="pre">plot</span></code> of the axes object. The functions in <code class="docutils literal notranslate"><span class="pre">plt</span></code> namespace refer to the global variables that tell what is the current figure and what is the current axes. If we want to refer to multiple figures and/or axes’ at the same, we cannot use the function in <code class="docutils literal notranslate"><span class="pre">plt</span></code>. Instead, we can refer to each <code class="docutils literal notranslate"><span class="pre">figure</span></code> or <code class="docutils literal notranslate"><span class="pre">axes</span></code> object and use their methods to do the drawing.</p>
 <p>Note the similarity to the random number generators in Python: the function like <code class="docutils literal notranslate"><span class="pre">np.random.randn</span></code> use the global random number generator. But if you want to use multiple random number generators at the same time, you first have to create the generators using the call <code class="docutils literal notranslate"><span class="pre">rng1=np.random.RandomState(seed)</span></code> and then use the <em>method</em> <code class="docutils literal notranslate"><span class="pre">rng1.randn</span></code>.</p>
 <p>So with both random number generators and matplotlib plots you can choose between using one global object, and functions referring to it, at a time, or using several objects and their methods to refer to multiple objects at the same time.</p>
@@ -464,6 +490,7 @@ coordinates are in the second column of <code class="docutils literal notranslat
 <li><a class="reference external" href="https://seaborn.pydata.org/index.html">Seaborn</a> is a higher-level plotting library that is build on top of matplotlib. It allows easy creation of more complicated plots. The figures it produces also look prettier than ones created by matplotlib with its default settings.</li>
 <li><a class="reference external" href="https://bokeh.pydata.org/en/latest/">Bokeh</a> creates html pages as output that can be viewed with a web browser. Since it doesn’t create static images, like many other plotting libraries, but html pages which can containg Javascript, this allows the plots to be interactive. Interactive can here mean that you can e.g. zoom or pan the image, or you can have control elements (button, sliders, etc) that adjust the image.</li>
 <li><a class="reference external" href="http://holoviews.org/">Holoviews</a>: even higher-level library build on top of Bokeh and matplotlib</li>
+<li><a class="reference external" href="https://plot.ly/python/">Plotly</a>: A powerful tool for creating interactive plots.</li>
 </ul>
 <!--NAVIGATION--></div>
 </div>

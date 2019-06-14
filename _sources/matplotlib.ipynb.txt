@@ -33,8 +33,6 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# This is needed so that the plotted figures appear embedded in this notebook:\n",
-    "%matplotlib inline               \n",
     "import numpy as np\n",
     "import matplotlib.pyplot as plt"
    ]
@@ -68,10 +66,12 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "plt.plot(a)                # plot the points in the array a\n",
+    "plt.plot(a)                   # plot the points in the array a\n",
     "plt.title(\"My first figure\")  # Add a title to the figure\n",
-    "plt.xlabel(\"My x-axis\")    # Give a label to the x-axis\n",
-    "plt.ylabel(\"My y-axis\");    # Give a label to the y-axis"
+    "plt.xlabel(\"My x-axis\")       # Give a label to the x-axis\n",
+    "plt.ylabel(\"My y-axis\")       # Give a label to the y-axis\n",
+    "plt.show()                    # Tell matplotlib to output the figure.\n",
+    "                              # Not strictly required (but a bit neater)."
    ]
   },
   {
@@ -127,7 +127,32 @@
     "ax[0,0].plot(np.arange(6))          # top left\n",
     "ax[0,1].plot(np.arange(6,0,-1))     # top right\n",
     "ax[1,0].plot((-1)**np.arange(6))    # bottom left\n",
-    "ax[1,1].plot((-1)**np.arange(1,7));  # bottom right"
+    "ax[1,1].plot((-1)**np.arange(1,7))  # bottom right\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "If you don't want to mess around with axes you can direct all your calls to pyplot (in a more matlabby way) like so:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "plt.subplot(2, 2, 1)    # Note the 1-indexing of subplots. \n",
+    "plt.plot(np.arange(6))\n",
+    "plt.subplot(2, 2, 2)\n",
+    "plt.plot(np.arange(6, 0, -1))\n",
+    "plt.subplot(2, 2, 3)\n",
+    "plt.plot((-1)**np.arange(6))\n",
+    "plt.subplot(2, 2, 4)\n",
+    "plt.plot((-1)**np.arange(1, 7))\n",
+    "plt.show()"
    ]
   },
   {
@@ -164,7 +189,8 @@
     "\n",
     "* [Seaborn](https://seaborn.pydata.org/index.html) is a higher-level plotting library that is build on top of matplotlib. It allows easy creation of more complicated plots. The figures it produces also look prettier than ones created by matplotlib with its default settings.\n",
     "* [Bokeh](https://bokeh.pydata.org/en/latest/) creates html pages as output that can be viewed with a web browser. Since it doesn't create static images, like many other plotting libraries, but html pages which can containg Javascript, this allows the plots to be interactive. Interactive can here mean that you can e.g. zoom or pan the image, or you can have control elements (button, sliders, etc) that adjust the image.\n",
-    "* [Holoviews](http://holoviews.org/): even higher-level library build on top of Bokeh and matplotlib"
+    "* [Holoviews](http://holoviews.org/): even higher-level library build on top of Bokeh and matplotlib\n",
+    "* [Plotly](https://plot.ly/python/): A powerful tool for creating interactive plots."
    ]
   },
   {
@@ -194,7 +220,36 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.1"
+   "version": "3.6.8"
+  },
+  "varInspector": {
+   "cols": {
+    "lenName": 16,
+    "lenType": 16,
+    "lenVar": 40
+   },
+   "kernels_config": {
+    "python": {
+     "delete_cmd_postfix": "",
+     "delete_cmd_prefix": "del ",
+     "library": "var_list.py",
+     "varRefreshCmd": "print(var_dic_list())"
+    },
+    "r": {
+     "delete_cmd_postfix": ") ",
+     "delete_cmd_prefix": "rm(",
+     "library": "var_list.r",
+     "varRefreshCmd": "cat(var_dic_list()) "
+    }
+   },
+   "types_to_exclude": [
+    "module",
+    "function",
+    "builtin_function_or_method",
+    "instance",
+    "_Feature"
+   ],
+   "window_display": false
   }
  },
  "nbformat": 4,
