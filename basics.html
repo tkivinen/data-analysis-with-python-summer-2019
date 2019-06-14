@@ -924,7 +924,7 @@ Note that in Python the operator <code class="docutils literal notranslate"><spa
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>    <span class="c1"># This is a commong idion to increment the value of i by one</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>    <span class="c1"># This is a commong idiom to increment the value of i by one</span>
 <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>     <span class="c1"># This is a short-hand for the above</span>
 </pre></div>
 </div>
@@ -2551,9 +2551,10 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </pre></div>
 </div>
 </div>
-<p>Because this is a common pattern, the designers of Python included a function called <code class="docutils literal notranslate"><span class="pre">reduce</span></code> to simplify the reduction of a sequence. You give the operator you want to use as a parameter to reduce (addition in the above example). And you also give a starting value of the computation (starting value 0 was used above). We can now get rid of the separate function sumreduce by using the reduce function:</p>
+<p>Because this is a common pattern, the <code class="docutils literal notranslate"><span class="pre">reduce</span></code> function is a common inclusion in functional programming languages. In Python <code class="docutils literal notranslate"><span class="pre">reduce</span></code> is included in the <code class="docutils literal notranslate"><span class="pre">functools</span></code> modlue. You give the operator you want to use as a parameter to reduce (addition in the above example). You may also give a starting value of the computation (starting value 0 was used above). If no starting value is used, the first element of the iterable is used as the starting value. We can now get rid of the separate
+function <code class="docutils literal notranslate"><span class="pre">sumreduce</span></code> by using the reduce function:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2564,7 +2565,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
@@ -2574,7 +2575,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 <p>If we wanted to get a product of all numbers in a sequence, we would use</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2583,7 +2584,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
@@ -2592,7 +2593,8 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 </div>
 <p>This corresponds to the sequence <code class="docutils literal notranslate"><span class="pre">(((1*1)*2)*3)*4</span></code> of application of operator <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p>
-<div class="alert alert-warning"><p>Note that use of the starting value is necessary, because we want to be able to reduce lists of lengths 0 and 1 as well. The default starting value is zero.</p>
+<div class="admonition warning">
+Note that use of the starting value is necessary, because we want to be able to reduce lists of lengt 0 as well. If no starting value is specified when run on an empty list, reduce will raise an exception.</div>
 </div>
 </div>
 </div>
@@ -2736,7 +2738,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </pre></div></div>
 </div>
 <div class="admonition warning">
-If you want to build a string out of smaller strings, then first put the small strings into a list, and then use the <code class="docutils literal notranslate"><span class="pre">join</span></code> method to catenate the pieces together. It is much more efficient this way. Use the <code class="docutils literal notranslate"><span class="pre">+</span></code> catenation operator only if you have very few short strings that you want to catenate.</div>
+If you want to build a string out of smaller strings, then first put the small strings into a list, and then use the <code class="docutils literal notranslate"><span class="pre">join</span></code> method to catenate the pieces together. It is much more efficient this way. Use the + catenation operator only if you have very few short strings that you want to catenate.</div>
 <p>The method <code class="docutils literal notranslate"><span class="pre">split(sep=None)</span></code> divides a string into pieces that are separated by the string <code class="docutils literal notranslate"><span class="pre">sep</span></code>. The pieces are returned in a list. For instance, the call <code class="docutils literal notranslate"><span class="pre">'abc--def--ghi'.split("--")</span></code> will result in</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
@@ -2932,11 +2934,12 @@ attribute <code class="docutils literal notranslate"><span class="pre">__file__<
 </footer>
 </div>
 </div>
+</section>
 </div>
 <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-</section></div></body>
+</body>
 </html>
