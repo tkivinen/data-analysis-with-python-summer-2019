@@ -2551,8 +2551,9 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </pre></div>
 </div>
 </div>
-<p>Because this is a common pattern, the <code class="docutils literal notranslate"><span class="pre">reduce</span></code> function is a common inclusion in functional programming languages. In Python <code class="docutils literal notranslate"><span class="pre">reduce</span></code> is included in the <code class="docutils literal notranslate"><span class="pre">functools</span></code> modlue. You give the operator you want to use as a parameter to reduce (addition in the above example). You may also give a starting value of the computation (starting value 0 was used above). If no starting value is used, the first element of the iterable is used as the starting value. We can now get rid of the separate
-function <code class="docutils literal notranslate"><span class="pre">sumreduce</span></code> by using the reduce function:</p>
+<p>Because this is a common pattern, the <code class="docutils literal notranslate"><span class="pre">reduce</span></code> function is a common inclusion in functional programming languages. In Python <code class="docutils literal notranslate"><span class="pre">reduce</span></code> is included in the <code class="docutils literal notranslate"><span class="pre">functools</span></code> modlue. You give the operator you want to use as a parameter to reduce (addition in the above example). You may also give a starting value of the computation (starting value 0 was used above).</p>
+<p>If no starting value is used, the first element of the iterable is used as the starting value.</p>
+<p>We can now get rid of the separate function <code class="docutils literal notranslate"><span class="pre">sumreduce</span></code> by using the reduce function:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>

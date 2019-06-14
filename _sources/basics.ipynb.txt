@@ -3027,7 +3027,11 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Because this is a common pattern, the `reduce` function is a common inclusion in functional programming languages. In Python `reduce` is included in the `functools` modlue. You give the operator you want to use as a parameter to reduce (addition in the above example). You may also give a starting value of the computation (starting value 0 was used above). If no starting value is used, the first element of the iterable is used as the starting value. We can now get rid of the separate function `sumreduce` by using the reduce function:"
+    "Because this is a common pattern, the `reduce` function is a common inclusion in functional programming languages. In Python `reduce` is included in the `functools` modlue. You give the operator you want to use as a parameter to reduce (addition in the above example). You may also give a starting value of the computation (starting value 0 was used above). \n",
+    "\n",
+    "If no starting value is used, the first element of the iterable is used as the starting value. \n",
+    "\n",
+    "We can now get rid of the separate function `sumreduce` by using the reduce function:"
    ]
   },
   {
