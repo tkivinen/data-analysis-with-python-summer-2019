@@ -5,6 +5,10 @@ python:
 
 cache: pip
 
+branches:
+  only:
+    - master
+
 addons:
   apt:
     packages:
@@ -35,7 +39,7 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   local-dir: _build
-  target-branch: gh-pages 
+  target-branch: gh-pages
   on:
     branch: master
 
