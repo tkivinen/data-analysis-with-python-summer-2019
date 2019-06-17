@@ -56,9 +56,6 @@ over the two categories, where category 1 has weight 2, and
 the second has weight 1. More details can be found in the Moodle.
 You must get at least grade 1 for the project work.
 
-You have ten days to finish the project solutions and report
-(26.4. - 6.5.). After that you have 7 days to do the peer review.
-Deadline for peer review is on 13.5.
 
 Sequence analysis
 -----------------
@@ -74,7 +71,7 @@ of your solutions, and include them in the notebook. Do not modify lines that sa
 Avoid too long lines as they might not be visible without horizontal scrolling.
 
 .. note::
-  The internal references in the notebook aren't weren't readable. It should be fixed now,
+  The internal references in the notebook weren't readable. It should be fixed now,
   but if you already downloaded it before, you can fetch the updated version from
   `here <https://www.cs.helsinki.fi/u/jttoivon/dap/project_notebook_sequence_analysis.ipynb>`__.
   The pdf version is available from `here
