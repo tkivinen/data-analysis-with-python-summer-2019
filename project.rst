@@ -6,7 +6,7 @@ Choose a project work. There are two projects to choose from:
 1. biological sequence analysis (part07)
 2. regression analysis on medical data (part08)
    
-After you have completed 65% of points from week 6, download the exercises
+After you have completed 80% of points from week 6, download the exercises
 and/or notebooks from the TMC server.
 Then try to solve as many exercises as you can.
 Then submit your solutions to the TMC server.
