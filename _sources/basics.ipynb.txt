@@ -228,7 +228,7 @@
    "metadata": {},
    "source": [
     "#### <div class=\"alert alert-info\">Exercise 3 (multiplication)</div> \n",
-    "Make a program that gives the following output. You must use a for loop in your solution.\n",
+    "Make a program that gives the following output. You should use a for loop in your solution.\n",
     "\n",
     "```\n",
     "4 multiplied by 0 is 0\n",
