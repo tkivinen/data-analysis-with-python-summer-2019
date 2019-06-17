@@ -370,7 +370,7 @@ This page was generated from <a class="reference external" href="https://github.
 </table>
 <div class="section" id="ML:-Naive-Bayes-classification">
 <h1>ML: Naive Bayes classification<a class="headerlink" href="#ML:-Naive-Bayes-classification" title="Permalink to this headline">¶</a></h1>
-<p><em>Classification</em> is one form of supervised learning. The aim is to annotate all data points with a label. Those points that have the same label belong to the same class. There can be two or more labels. For example, a lifeforms can be classified (coarsely) with labels animal, plant, fungi, archaea, bacteria, protozoa, and chromista. The data points are observed to have certain features that can be used to predict their labels. For example, if it is has feathers, then it is most likely an animal.</p>
+<p><em>Classification</em> is one form of supervised learning. The aim is to annotate all data points with a label. Those points that have the same label belong to the same class. There can be two or more labels. For example, a lifeform can be classified (coarsely) with labels animal, plant, fungi, archaea, bacteria, protozoa, and chromista. The data points are observed to have certain features that can be used to predict their labels. For example, if it is has feathers, then it is most likely an animal.</p>
 <p>In supervised learning an algorithm is first given a training set of data points with their features and labels. Then the algorithm learns from these features and labels a (probabilistic) model, which can afterwards be used to predict the labels of previously unseen data.</p>
 <p><em>Naive Bayes classification</em> is a fast and simple to understand classification method. Its speed is due to some simplifications we make about the underlying probability distributions, namely, the assumption about the independence of features. Yet, it can be quite powerful, especially when there are enough features in the data.</p>
 <p>Suppose we have for each label L a probability distribution. This distribution gives probability for each possible combination of features (a feature vector):</p>
@@ -588,10 +588,10 @@ Accuracy score is 1.0
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Means: [[-0.05081023  0.05725218]
- [-0.01095194  4.00048628]]
-Standard deviations: [[ 4.53497868  4.45651608]
- [ 4.44773845  4.39035073]]
+Means: [[-0.02464477  0.036061  ]
+ [ 0.14248714  3.83277735]]
+Standard deviations: [[ 4.25300252  4.53838145]
+ [ 4.72511668  4.58416907]]
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -616,7 +616,7 @@ Standard deviations: [[ 4.53497868  4.45651608]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Accuracy score is 0.831
+Accuracy score is 0.82
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -733,7 +733,7 @@ Training data: Data: &lt;class 'list'&gt; 2364 Target: &lt;class 'numpy.ndarray'
 Test data: Data: &lt;class 'list'&gt; 1574 Target &lt;class 'list'&gt; 1574
 </pre></div></div>
 </div>
-<p>We use as features the frequencies of each word in the dataset. That is, there as many features as there are distinct words in the dataset. We denote the number of features by <span class="math notranslate nohighlight">\(f\)</span>. As the features are now counts, it is sensible to use multinomial distribution instead of Gaussian.</p>
+<p>We use as features the frequencies of each word in the dataset. That is, there are as many features as there are distinct words in the dataset. We denote the number of features by <span class="math notranslate nohighlight">\(f\)</span>. As the features are now counts, it is sensible to use multinomial distribution instead of Gaussian.</p>
 <p>Let’s try to model these messages using multinomial distributions. Each message category has its own distribution. A multinomial distribution has <span class="math notranslate nohighlight">\(f\)</span> non-negative parameters <span class="math notranslate nohighlight">\(\theta_1,\ldots , \theta_f\)</span>, which sum up to one. For example, the parameter <span class="math notranslate nohighlight">\(\theta_3\)</span> might tell the the probability of the word “board” appearing in a message of the category this distribution is describing.</p>
 <p>In scikit-learn there is a class <code class="docutils literal notranslate"><span class="pre">CountVectorizer</span></code> that converts messages in form of text strings to feature vectors. We can integrate this conversion with the model we are using (multinomial naive Bayes), so that the conversion happens automatically as part of the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method. We achive this integration using the <code class="docutils literal notranslate"><span class="pre">make_pipeline</span></code> tool.</p>
 <div class="nbinput docutils container">
