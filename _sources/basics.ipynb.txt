@@ -1745,7 +1745,7 @@
     "(-1.0,-1.0)\n",
     "```\n",
     "\n",
-    "Use the `math.sqrt` function from the `math` module in your solution. Test that your function works in the main function!\n",
+    "You may want to use the `math.sqrt` function from the `math` module in your solution. Test that your function works in the main function!\n",
     "<hr/>"
    ]
   },
