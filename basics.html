@@ -1143,7 +1143,7 @@ The first negative list element was -1
 </div>
 <p>Stopping current iteration and continuing to the next one with the <code class="docutils literal notranslate"><span class="pre">continue</span></code> statement:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1152,8 +1152,8 @@ The first negative list element was -1
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">continue</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Square root of </span><span class="si">%i</span><span class="s2"> is </span><span class="si">%f</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Natural logarithm of </span><span class="si">%i</span><span class="s2"> is </span><span class="si">%f</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">"Square root of </span><span class="si">{x}</span><span class="s2"> is {sqrt(x):.3f}"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">"Natural logarithm of </span><span class="si">{x}</span><span class="s2"> is {log(x):.4f}"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1162,16 +1162,16 @@ The first negative list element was -1
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Square root of 1 is 1.000000
-Natural logarithm of 1 is 0.000000
-Square root of 3 is 1.732051
-Natural logarithm of 3 is 1.098612
-Square root of 65 is 8.062258
-Natural logarithm of 65 is 4.174387
-Square root of 3 is 1.732051
-Natural logarithm of 3 is 1.098612
-Square root of 56 is 7.483315
-Natural logarithm of 56 is 4.025352
+Square root of 1 is 1.000
+Natural logarithm of 1 is 0.0000
+Square root of 3 is 1.732
+Natural logarithm of 3 is 1.0986
+Square root of 65 is 8.062
+Natural logarithm of 65 is 4.1744
+Square root of 3 is 1.732
+Natural logarithm of 3 is 1.0986
+Square root of 56 is 7.483
+Natural logarithm of 56 is 4.0254
 </pre></div></div>
 </div>
 <hr class="docutils"/>
