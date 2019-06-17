@@ -617,8 +617,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "The `i` format specifier corresponds to integers and the specifier `f` corresponds to floats.\n",
-    "It is often useful to specify the number of decimals when printing the float:"
+    "The `i` format specifier in the format syntacs corresponds to integers and the specifier `f` corresponds to floats. When using f-strings or the `format` method, integers use `d` instead. In format strings specifiers can usually be omitted and are generally used only when specific formatting is required. For example in f-strings `f\"{4:3d}\"` would specify the number 4 left padded with spaces to 3 digits.\n",
+    "\n",
+    "It is often useful to specify the number of decimals when printing floats:"
    ]
   },
   {

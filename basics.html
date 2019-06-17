@@ -846,7 +846,8 @@ first second second first
 1 plus 3 is equal to 4
 </pre></div></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> format specifier corresponds to integers and the specifier <code class="docutils literal notranslate"><span class="pre">f</span></code> corresponds to floats. It is often useful to specify the number of decimals when printing the float:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> format specifier in the format syntacs corresponds to integers and the specifier <code class="docutils literal notranslate"><span class="pre">f</span></code> corresponds to floats. When using f-strings or the <code class="docutils literal notranslate"><span class="pre">format</span></code> method, integers use <code class="docutils literal notranslate"><span class="pre">d</span></code> instead. In format strings specifiers can usually be omitted and are generally used only when specific formatting is required. For example in f-strings <code class="docutils literal notranslate"><span class="pre">f"{4:3d}"</span></code> would specify the number 4 left padded with spaces to 3 digits.</p>
+<p>It is often useful to specify the number of decimals when printing floats:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
