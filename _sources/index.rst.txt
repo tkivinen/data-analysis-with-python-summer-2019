@@ -17,11 +17,11 @@ format. After which the data can, for instance, be
 * combined or divided into smaller chunks
 
 * grouped or sorted,
-  
+
 * condensed into small number of summary statistics
-  
+
 * numerical or string operations can be performed on the data
-  
+
 The point is to manipulate the data into a form that enables discovery
 of relationships and regularities among the elements of data.
 Visualization of data often helps to get a better understanding of the data.
@@ -121,7 +121,7 @@ Software libraries used
    instructions
    tools
    faq
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: Week 1:
@@ -134,29 +134,29 @@ Software libraries used
 
    basics2
    numpy
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: Week 3:
 
-   numpy2	     
+   numpy2
    matplotlib
    image_processing
    pandas1
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: Week 4:
 
    pandas2
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: Week 5:
 
    pandas3
    linear_regression
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: Week6:
@@ -171,14 +171,8 @@ Software libraries used
 
    project
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Week8:
-
-   exam
 
 
-   
 Indices and tables
 ==================
 
