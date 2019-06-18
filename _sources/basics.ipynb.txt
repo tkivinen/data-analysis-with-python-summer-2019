@@ -2086,7 +2086,7 @@
     "`interleave([1,2,3], [20,30,40], ['a', 'b', 'c'])`\n",
     "should return\n",
     "`[1, 20, 'a', 2, 30, 'b', 3, 40, 'c']`.\n",
-    "Use the `zip` function and the `extend` method of the list object to implement `interleave`.\n",
+    "Use the `zip` function to implement `interleave`. Remember the `extend` method of list objects.\n",
     "<hr/>"
    ]
   },
