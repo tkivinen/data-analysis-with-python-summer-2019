@@ -216,12 +216,11 @@ This page was generated from <a class="reference external" href="https://github.
 <ul class="simple">
 <li>Create a <code class="docutils literal notranslate"><span class="pre">aliases.cmd</span></code> file</li>
 <li>Add the following to the file: <code class="docutils literal notranslate"><span class="pre">@echo</span> <span class="pre">off</span>   <span class="pre">doskey</span> <span class="pre">tmc=java</span> <span class="pre">-jar</span> <span class="pre">&lt;Path-to-tmc-jar&gt;</span> <span class="pre">$*</span></code></li>
-<li>In <code class="docutils literal notranslate"><span class="pre">regedit</span></code>, browse to <code class="docutils literal notranslate"><span class="pre">HKEY_CURRENT_USER\Software\Microsoft\Command</span> <span class="pre">Processor</span></code></li>
-<li>Create a new registry key-value pair of type <code class="docutils literal notranslate"><span class="pre">REG_EXPAND_SZ</span></code>, with name <code class="docutils literal notranslate"><span class="pre">AutoRun</span></code> and the path to the aliases file as value<ul>
-<li>Thanks to @Eeero for the step-by-step instructions.</li>
+<li>In <code class="docutils literal notranslate"><span class="pre">`regedit</span></code> &lt;<a class="reference external" href="https://support.microsoft.com/en-us/help/4027573/windows-10-open-registry-editor">https://support.microsoft.com/en-us/help/4027573/windows-10-open-registry-editor</a>&gt;`__, browse to <code class="docutils literal notranslate"><span class="pre">HKEY_CURRENT_USER\Software\Microsoft\Command</span> <span class="pre">Processor</span></code></li>
+<li>Create a new registry key-value pair of type <code class="docutils literal notranslate"><span class="pre">REG_EXPAND_SZ</span></code>, with name <code class="docutils literal notranslate"><span class="pre">AutoRun</span></code> and the path to the aliases file as value</li>
+<li>Now the <code class="docutils literal notranslate"><span class="pre">tmc</span></code> alias should always be added when a new console is opened</li>
 </ul>
-</li>
-</ul>
+<p>Thanks to @Eeero for the step-by-step instructions.</p>
 <!--NAVIGATION--></div>
 </div>
 </div>
