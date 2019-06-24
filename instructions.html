@@ -48,7 +48,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#2-Log-in-to-the-course">2 Log in to the course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#3-Install-TMC-client">3 Install TMC client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#3-Install-TMC-client">3 Install TMC client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Note-for-windows-users">Note for windows users</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Running Python code</a></li>
@@ -148,42 +151,36 @@ This page was generated from <a class="reference external" href="https://github.
 <ul class="simple">
 <li>This is the recommended alternative</li>
 <li>Will take about 3.3 gigabytes of disk space</li>
-<li>Download the anaconda installer (64bits, Python 3) from <a class="reference external" href="https://www.anaconda.com/download">https://www.anaconda.com/download</a></li>
-<li>On command line run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">nameofthedownloadedfile</span></code> on Linux (and maybe on macOS)</li>
+<li>Download the anaconda installer for your OS (64bits, Python 3) from <a class="reference external" href="https://www.anaconda.com/download">https://www.anaconda.com/download</a></li>
+<li>Install anaconda<ul>
+<li><strong>Linux:</strong> On command line run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">nameofthedownloadedfile</span></code></li>
+<li><strong>Windows:</strong> Execute the installer you downloaded</li>
+</ul>
+</li>
 <li>Follow the instructions of the installer</li>
 <li>Takes about 3 minutes</li>
+<li><strong>windows:</strong> In the anaconda navigator, start the conda prompt.</li>
 <li>Verify that your installation is complete by downloading the script <a class="reference external" href="https://raw.githubusercontent.com/saskeli/data-analysis-with-python-summer-2019/master/versions.py">versions.py</a> and run it with <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">versions.py</span></code>.</li>
 </ul>
 </div>
 <div class="section" id="(alternative-b)-Install-miniconda-and-Python-packages">
 <h3>(alternative b) Install miniconda and Python packages<a class="headerlink" href="#(alternative-b)-Install-miniconda-and-Python-packages" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">This alternative is not recommended</p>
-</li>
-<li><p class="first">Will take about 2.3 gigabytes of disk space</p>
-</li>
-<li><p class="first">Download miniconda installer (64bits, Python 3) from <a class="reference external" href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a></p>
-</li>
-<li><p class="first">Run the installer</p>
 <ul class="simple">
-<li>On the command line run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">nameofthedownloadedfile</span></code></li>
+<li>This alternative is not recommended</li>
+<li>Will take about 2.3 gigabytes of disk space</li>
+<li>Download miniconda installer (64bits, Python 3) from <a class="reference external" href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a></li>
+<li>Run the installer<ul>
+<li><strong>Linux:</strong> On the command line run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">nameofthedownloadedfile</span></code></li>
+<li><strong>Windows:</strong> Execute the downloaded installler</li>
 </ul>
 </li>
-<li><p class="first">Activate the miniconda environment</p>
-<ul class="simple">
-<li>With Linux and MacOS: <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/miniconda/install/location/bin/activate</span></code></li>
+<li>Activate the miniconda environment<ul>
+<li><strong>Linux and MacOS:</strong> <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/miniconda/install/location/bin/activate</span></code></li>
+<li><strong>Windows:</strong> Start the anaconda command prompts</li>
 </ul>
 </li>
-<li><p class="first">Download the <a class="reference external" href="https://raw.githubusercontent.com/saskeli/data-analysis-with-python-summer-2019/master/requirements.txt">requirements.txt</a> file</p>
-</li>
-<li><p class="first">Install the required packages with</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`conda install --yes --file requirements.txt`
-</pre></div>
-</div>
-<p>This may take awhile.</p>
-</li>
-<li><p class="first">Takes about 1 min 30 s on fast network</p>
-</li>
+<li>Download the <a class="reference external" href="https://raw.githubusercontent.com/saskeli/data-analysis-with-python-summer-2019/master/requirements.txt">requirements.txt</a> file</li>
+<li>Install the required packages with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--yes</span> <span class="pre">--file</span> <span class="pre">requirements.txt</span></code> This may take awhile. (About 1 min 30 s on fast network)</li>
 </ul>
 </div>
 </div>
@@ -212,7 +209,21 @@ This page was generated from <a class="reference external" href="https://github.
 <li><code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">submit</span></code> to submit your solution to the server for grading</li>
 <li>The above github page of the tmc-client also contains instructions on the use of the client</li>
 </ul>
+<div class="section" id="Note-for-windows-users">
+<h3>Note for windows users<a class="headerlink" href="#Note-for-windows-users" title="Permalink to this headline">¶</a></h3>
+<p>As there is no installer, you get the tmc cli client by downloading the latest <code class="docutils literal notranslate"><span class="pre">.jar</span></code> file from releases. To actually run the tmc cli you issue the exact commands below but substituting <code class="docutils literal notranslate"><span class="pre">tmc</span></code> with <code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">&lt;path-to-jar-file&gt;.jar</span></code> as specified <a class="reference external" href="https://github.com/testmycode/tmc-cli#manual-installation">here</a>.</p>
+<p>You may want to alias the <code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">&lt;path-to-jar-file&gt;.jar</span></code> -part of the command so that just the command <code class="docutils literal notranslate"><span class="pre">tmc</span></code> works on windows as well. This can be done according to <a class="reference external" href="https://superuser.com/questions/1134368/create-permanent-doskey-in-windows-cmd">these instructions</a>.</p>
+<ul class="simple">
+<li>Create a <code class="docutils literal notranslate"><span class="pre">aliases.cmd</span></code> file</li>
+<li>Add the following to the file: <code class="docutils literal notranslate"><span class="pre">@echo</span> <span class="pre">off</span>   <span class="pre">doskey</span> <span class="pre">tmc=java</span> <span class="pre">-jar</span> <span class="pre">&lt;Path-to-tmc-jar&gt;</span> <span class="pre">$*</span></code></li>
+<li>In <code class="docutils literal notranslate"><span class="pre">regedit</span></code>, browse to <code class="docutils literal notranslate"><span class="pre">HKEY_CURRENT_USER\Software\Microsoft\Command</span> <span class="pre">Processor</span></code></li>
+<li>Create a new registry key-value pair of type <code class="docutils literal notranslate"><span class="pre">REG_EXPAND_SZ</span></code>, with name <code class="docutils literal notranslate"><span class="pre">AutoRun</span></code> and the path to the aliases file as value<ul>
+<li>Thanks to @Eeero for the step-by-step instructions.</li>
+</ul>
+</li>
+</ul>
 <!--NAVIGATION--></div>
+</div>
 </div>
 </div>
 </div>

@@ -25,12 +25,16 @@
     "## 1 Install Python and the needed external packages\n",
     "\n",
     "### (alternative a) Install full anaconda distribution\n",
+    "\n",
     "* This is the recommended alternative\n",
     "* Will take about 3.3 gigabytes of disk space\n",
-    "* Download the anaconda installer (64bits, Python 3) from https://www.anaconda.com/download\n",
-    "* On command line run `bash nameofthedownloadedfile` on Linux (and maybe on macOS)\n",
+    "* Download the anaconda installer for your OS (64bits, Python 3) from https://www.anaconda.com/download\n",
+    "* Install anaconda\n",
+    "    * **Linux:** On command line run `bash nameofthedownloadedfile`\n",
+    "    * **Windows:** Execute the installer you downloaded\n",
     "* Follow the instructions of the installer\n",
     "* Takes about 3 minutes\n",
+    "* **windows:** In the anaconda navigator, start the conda prompt.\n",
     "* Verify that your installation is complete by downloading the script [versions.py](https://raw.githubusercontent.com/saskeli/data-analysis-with-python-summer-2019/master/versions.py) and run it with `python3 versions.py`.\n",
     "\n",
     "### (alternative b) Install miniconda and Python packages\n",
@@ -38,20 +42,14 @@
     "* Will take about 2.3 gigabytes of disk space\n",
     "* Download miniconda installer (64bits, Python 3) from https://conda.io/miniconda.html\n",
     "* Run the installer\n",
-    "\n",
-    "    * On the command line run `bash nameofthedownloadedfile`\n",
-    "  \n",
+    "    * **Linux:** On the command line run `bash nameofthedownloadedfile`\n",
+    "    * **Windows:** Execute the downloaded installler\n",
     "* Activate the miniconda environment\n",
-    "\n",
-    "    * With Linux and MacOS:\n",
-    "        `source /miniconda/install/location/bin/activate`\n",
+    "    * **Linux and MacOS:** `source /miniconda/install/location/bin/activate`\n",
+    "    * **Windows:** Start the anaconda command prompts\n",
     "* Download the [requirements.txt](https://raw.githubusercontent.com/saskeli/data-analysis-with-python-summer-2019/master/requirements.txt) file\n",
-    "* Install the required packages with\n",
-    "\n",
-    "         `conda install --yes --file requirements.txt`\n",
-    "  This may take awhile.\n",
-    "  \n",
-    "* Takes about 1 min 30 s on fast network"
+    "* Install the required packages with `conda install --yes --file requirements.txt`\n",
+    "  This may take awhile. (About 1 min 30 s on fast network)"
    ]
   },
   {
@@ -86,7 +84,23 @@
     "  * `tmc` to show help message\n",
     "  * `tmc test` to test your solution locally\n",
     "  * `tmc submit` to submit your solution to the server for grading\n",
-    "* The above github page of the tmc-client also contains instructions on the use of the client"
+    "* The above github page of the tmc-client also contains instructions on the use of the client\n",
+    "\n",
+    "### Note for windows users\n",
+    "\n",
+    "As there is no installer, you get the tmc cli client by downloading the latest `.jar` file from releases. To actually run the tmc cli you issue the exact commands below but substituting `tmc` with `java -jar <path-to-jar-file>.jar` as specified [here](https://github.com/testmycode/tmc-cli#manual-installation). \n",
+    "\n",
+    "You may want to alias the `java -jar <path-to-jar-file>.jar` -part of the command so that just the command `tmc` works on windows as well. This can be done according to [these instructions](https://superuser.com/questions/1134368/create-permanent-doskey-in-windows-cmd).\n",
+    "\n",
+    "* Create a `aliases.cmd` file\n",
+    "* Add the following to the file:\n",
+    "  ```\n",
+    "  @echo off\n",
+    "  doskey tmc=java -jar <Path-to-tmc-jar> $*\n",
+    "  ```\n",
+    "* In `regedit`, browse to `HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor`\n",
+    "* Create a new registry key-value pair of type `REG_EXPAND_SZ`, with name `AutoRun` and the path to the aliases file as value\n",
+    "    * Thanks to @Eeero for the step-by-step instructions."
    ]
   },
   {
@@ -116,7 +130,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.1"
+   "version": "3.6.8"
   },
   "varInspector": {
    "cols": {
