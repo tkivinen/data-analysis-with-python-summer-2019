@@ -24,7 +24,7 @@
 <div class="wy-grid-for-nav">
 <nav class="wy-nav-side" data-toggle="wy-nav-shift">
 <div class="wy-side-scroll">
-<div class="wy-side-nav-search">
+<div class="wy-side-nav-search"><a href="http://www.helsinki.fi" style="margin-bottom: 0px;"><img src="https://uni.materialbank.net/NiboWEB/uni/getPublicFile.do?uuid=146263&amp;inline=false&amp;ticket=8a2a112700dc87abd2813d55e149bc0c&amp;type=original" style="margin-bottom: 0px;max-width: 60%;height: auto;width: auto;"/></a>
 <a class="icon icon-home" href="index.html"> Data analysis with Python - Summer 2019
           
 
@@ -577,10 +577,10 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[  6.92715161e-310,   6.92715161e-310,   0.00000000e+000,
+<span></span>array([[  6.94801568e-310,   1.38567469e-316,   0.00000000e+000,
           0.00000000e+000],
-       [  0.00000000e+000,   0.00000000e+000,   0.00000000e+000,
-          0.00000000e+000]])
+       [  0.00000000e+000,   0.00000000e+000,   2.23158753e-296,
+          3.93978880e-061]])
 </pre></div>
 </div>
 </div>
@@ -664,9 +664,9 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 0.79747702,  0.37402722,  0.3238877 ,  0.49570659],
-       [ 0.77706857,  0.29302367,  0.73973138,  0.28619025],
-       [ 0.15605906,  0.29411128,  0.59287671,  0.61563253]])
+<span></span>array([[ 0.08441416,  0.50232004,  0.59815995,  0.36648766],
+       [ 0.42563705,  0.97941911,  0.6729227 ,  0.13555186],
+       [ 0.68340856,  0.07995109,  0.67165916,  0.56034618]])
 </pre></div>
 </div>
 </div>
@@ -684,9 +684,9 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[-0.64201021, -1.21929985, -0.10956249,  1.6534755 ],
-       [ 1.79585023,  0.14683296,  2.62915886,  0.83305013],
-       [ 1.64039564, -0.25050653, -0.61665803, -1.28979623]])
+<span></span>array([[-0.11536754,  0.45197911,  0.9265177 , -0.69332659],
+       [ 0.92501807, -2.18980025,  0.43045851,  0.34400722],
+       [ 0.25442632, -0.84457991, -1.2150309 , -0.69575308]])
 </pre></div>
 </div>
 </div>
@@ -704,9 +704,9 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 1,  3,  9,  9],
-       [ 5,  1, -2,  0],
-       [ 3,  8,  3, -2]])
+<span></span>array([[ 3,  5,  4,  0],
+       [ 5,  0,  2,  6],
+       [ 9,  0,  9, -1]])
 </pre></div>
 </div>
 </div>
@@ -1687,7 +1687,7 @@ Note that most of the aggregation functions in NumPy have corresponding methods.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-3.74 µs ± 15.7 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+3.72 µs ± 16.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1704,7 +1704,7 @@ Note that most of the aggregation functions in NumPy have corresponding methods.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-86.6 µs ± 660 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+89.5 µs ± 106 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 </pre></div></div>
 </div>
 <p>The speed of NumPy is partly due to the fact that its arrays must have same type for all the elements. This requirement allows some efficient optimizations.</p>
