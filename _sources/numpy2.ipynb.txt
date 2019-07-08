@@ -480,6 +480,8 @@
    "source": [
     "#### <div class=\"alert alert-info\">Exercise 3 (most frequent first)</div>\n",
     "\n",
+    "**<span style=\"color:red\">Note:</span>** This exercise is fairly difficult. Feel free to skip if you get stuck.\n",
+    "\n",
     "Write function `most_frequent_first` that gets a two dimensional array and an index `c` of a column as parameters. The function should then return the array whose rows are sorted based on column `c`, in the following way. Rows are ordered so that those rows with the most frequent element in column `c` come first, then come the rows with the second most frequent element in column `c`, and so on. Therefore, the values outside column `c` don't affect the ordering in any way.\n",
     "\n",
     "Example of usage:\n",
