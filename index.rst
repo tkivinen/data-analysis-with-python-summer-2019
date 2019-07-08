@@ -59,7 +59,7 @@ themes discussed in the exercises. The final grade will be based
 on the project work, its peer review, and the exam.
 
 Programming exercises form the 4 cu massive open online part of the course (MOOC).
-Project work, its peer-review and exam are only available for `enrolled students <https://courses.helsinki.fi/fi/aycsm90004en/>`__. 
+Project work, its peer-review and exam are only available for `enrolled students <https://courses.helsinki.fi/fi/aycsm90004en/>`__.
 
 Note that this course requires a lot of work! Depending on your background
 it can take something between 5 to 20 hours per week.
@@ -72,7 +72,7 @@ Schedule
 Every week there are 15 - 20 programming exercises that you must
 solve and then submit to the TMC system for checking.
 In order to continue with next week's exercises, you
-need to get 80% of the **points** from exercises of the previous week. 
+need to get 80% of the **points** from exercises of the previous week.
 Note that from some exercises it is possible to get more than one point.
 These exercises are divided into *parts*, where the parts are shown
 as Part 1, Part 2, etc. Each part gives one point.
@@ -93,6 +93,9 @@ The browser version can be reached here `Telegram <https://web.telegram.org>`__.
 The discussion channel is based on peer support. The teachers of the course
 are participating the discussion on voluntary basis if time permits.
 
+Please refrain from posting code or stack traces as text of attachments in the chat room.
+Use tmc paste or another paste site instead and just post the link. Also try to avoid
+posting complete solutions or spoilers for exercises.
 
 
 Software libraries used
