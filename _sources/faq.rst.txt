@@ -130,4 +130,12 @@ issue. If the problem persists, make a bug report in:
 
 * Give feedback, when using ``tmc submit``
 
+Note that reporting that "tests should be better" doesn't really help. Please try to be more specific with bug reports. You can for example consider the following:
 
+* What was the error message?
+
+* What was the actual issue if you managed to fix it?
+
+* Link to non-working code
+
+* If reported via Github or Telegram: **What was the excercise in question?**
