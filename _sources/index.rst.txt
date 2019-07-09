@@ -58,8 +58,8 @@ exam. The final exam consists of multiple choice questions on the
 themes discussed in the exercises. The final grade will be based
 on the project work, its peer review, and the exam.
 
-Programming exercises form the 4 cu massive open online part of the course (MOOC).
-Project work, its peer-review and exam are only available for `enrolled students <https://courses.helsinki.fi/fi/aycsm90004en/>`__.
+Programming exercises form the 4 cu massive open online part of the course (MOOC). We provide a certificate for passing this part.
+Project work, its peer-review and exam are only available for `enrolled students <https://courses.helsinki.fi/fi/aycsm90004en/>`__. These are required for getting the course marked with a grade and registered as a 5 cu course taken at the University of Helsinki.
 
 Note that this course requires a lot of work! Depending on your background
 it can take something between 5 to 20 hours per week.
