@@ -5,7 +5,7 @@ Choose a project work. There are two projects to choose from:
 
 1. biological sequence analysis (part07)
 2. regression analysis on medical data (part08)
-   
+
 After you have completed 80% of points from week 6, download the exercises
 and/or notebooks from the TMC server.
 Then try to solve as many exercises as you can.
@@ -60,30 +60,19 @@ You must get at least grade 1 for the project work.
 Sequence analysis
 -----------------
 
-Complete the exercises of the project like normal weekly exercises.
+Download part 7 from tmc after you have completed the required number of part 6
+as a usual. The ``src``-folder contain a jupyter notebook
+``project_notebook_sequence_analysis.ipynb``. Run the notebook and fill in the
+cells as instructed. You may run tmc test to see that functions work as required.
+Submitting may not work especially if you download content from the internet as
+part of your code.
 
-Copy the file ``project_notebook_sequence_analysis.ipynb`` to folder
-``hy-data-analysis-with-python-summer-2019``,
-where your solutions are. Start Jupyter with
-``jupyter-notebook project_notebook_sequence_analysis.ipynb``.
-Fill in the missing boxes. Run all cells; it should find the source code
-of your solutions, and include them in the notebook. Do not modify lines that say ``# exercise x``.
-Avoid too long lines as they might not be visible without horizontal scrolling.
-
-.. note::
-  The internal references in the notebook weren't readable. It should be fixed now,
-  but if you already downloaded it before, you can fetch the updated version from
-  `here <https://www.cs.helsinki.fi/u/jttoivon/dap/project_notebook_sequence_analysis.ipynb>`__.
-  The pdf version is available from `here
-  <https://www.cs.helsinki.fi/u/jttoivon/dap/project_notebook_sequence_analysis.pdf>`__.
-
-  
 Next to each exercise in the report there are also two text boxes for you
 to fill. In the first box, in your own words, describe the idea of the
-solution to the exercise. In the second box analyse the results,
-including how the program worked with the given example input or
-your own examples. Make sure the notebook includes your solutions and looks readable,
-and then submit the resulting notebook to Moodle.
+solution to the exercise. In the second box analyse the results, including how
+the program worked with the given example input or your own examples. Make sure
+the notebook includes your solutions and looks readable, and then submit the
+resulting notebook to Moodle.
 
 NOTE. Exercises in section "Stationary and equilibrium distributions (extra)"
 (exercises 20, 21, and 22) are not obligatory. Thus, you only need to do
@@ -130,13 +119,7 @@ Sequence analysis
 
 Go to a temporary working area (like ``/tmp`` on Unix) so you don't accidentally overwrite
 your own solutions. Run ``tmc download -a hy-data-analysis-with-python-summer-2019``
-to get the tests. Store student's notebook to file
-``hy-data-analysis-with-python-summer-2019/project_notebook_sequence_analysis.ipynb``.
-In the same folder as the notebook, download and save the script
-`split-bio-sequence-notebook-into-files.py <https://www.cs.helsinki.fi/u/jttoivon/dap/split-bio-sequence-notebook-into-files.py>`__ (version 2), which will extract the solutions
-from notebook to files.
-Run the script with ``python3 split-bio-sequence-notebook-into-files.py``.
-This will overwrite existing files, so be careful!
-Run the tests using ``tmc test part07-e*``.
+to get the tests. Overwrite the student's notebook in ``part07-e01_sequence_analysis/src``.
+Run the tests using ``tmc test`` in the ``part07-e01_sequence_analysis`` folder.
 
 
