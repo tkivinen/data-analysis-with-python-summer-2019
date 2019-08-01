@@ -453,9 +453,9 @@ This page was generated from <a class="reference external" href="https://github.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[[ 0.86008475  4.31501411]
+[[ 2.07464749  0.9869902 ]
  [-1.36512238  7.70188306]
- [ 2.07464749  0.9869902 ]
+ [ 0.86008475  4.31501411]
  [-1.70639178  2.9104771 ]]
 </pre></div></div>
 </div>
@@ -493,7 +493,7 @@ This page was generated from <a class="reference external" href="https://github.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Accuracy score is 0.25
+Accuracy score is 0.01
 </pre></div></div>
 </div>
 <p>Oops! Even though the clusters could match almost perfectly to the original, their labels might be permuted. Let’s select randomly one point from each cluster and check their labels from the original data labels. Then we use this label for the whole cluster. In essence, we are renaming the clusters, not re-clustering the data.</p>
@@ -528,7 +528,7 @@ Accuracy score is 0.25
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[0, 3, 1, 2]
+[1, 3, 0, 2]
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -732,7 +732,7 @@ Accuracy score is 0.793544796884
 <hr/><hr class="docutils"/>
 <div class="admonition note"><a id="Exercise-6-(nonconvex-clusters)">Exercise 6 (nonconvex clusters)</a></div>
 <p>This exercise can give four points at maximum!</p>
-<p>Read the tab separated file data.tsv from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder into a DataFrame. The dataset has two features X1 and X2, and the label y. Cluster the feature matrix using DBSCAN with different values for the eps parameter. Use values in <code class="docutils literal notranslate"><span class="pre">np.arange(0.05,</span> <span class="pre">0.2,</span> <span class="pre">0.05)</span></code> for clustering. For each clustering, collect the accuracy score, the number of clusters, and the number of outliers. Return these values in a DataFrame, where <code class="docutils literal notranslate"><span class="pre">eps</span></code> is the index and the columns are names as in the below example.</p>
+<p>Read the tab separated file data.tsv from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder into a DataFrame. The dataset has two features X1 and X2, and the label y. Cluster the feature matrix using DBSCAN with different values for the eps parameter. Use values in <code class="docutils literal notranslate"><span class="pre">np.arange(0.05,</span> <span class="pre">0.2,</span> <span class="pre">0.05)</span></code> for clustering. For each clustering, collect the accuracy score, the number of clusters, and the number of outliers. Return these values in a DataFrame, where columns and column names are as in the below example.</p>
 <p>Note that DBSCAN uses label -1 to denote outliers , that is, those data points that didn’t fit well in any cluster. You have to modify the find_permutation function to handle this: ignore the outlier data points from the accuracy score computation. In addition, if the number of clusters is not the same as the number of labels in the original data, set the accuracy score to NaN.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>     eps   Score  Clusters  Outliers
 0    0.05      ?         ?         ?
