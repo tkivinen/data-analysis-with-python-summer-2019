@@ -97,9 +97,9 @@ You can reach the channel through this link:
 The browser version can be reached here `Telegram <https://web.telegram.org>`__.
 
 The discussion channel is based on peer support. The teachers of the course
-are participating the discussion on voluntary basis if time permits.
+are participating in the discussion on voluntary basis if time permits.
 
-Please refrain from posting code or stack traces as text of attachments in the chat room.
+Please refrain from posting code or stack traces as text or attachments in the chat room.
 Use tmc paste or another paste site instead and just post the link. Also try to avoid
 posting complete solutions or spoilers for exercises.
 
