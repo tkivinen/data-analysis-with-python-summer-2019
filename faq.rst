@@ -124,7 +124,7 @@ I cannot understand the error message from a failed test case
 First run ``tmc update`` to make sure I haven't already fixed that
 issue. If the problem persists, make a bug report in:
 
-* Telegram: `https://t.me/tkt-dap <https://t.me/tkt-dap>`__
+* Telegram: `https://t.me/tkt_dap <https://t.me/tkt_dap>`__
 
 * Github `issues <https://github.com/saskeli/data-analysis-with-python-summer-2019/issues>`__
 
