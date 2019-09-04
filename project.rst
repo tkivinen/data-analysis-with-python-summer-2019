@@ -7,8 +7,6 @@ Choose a project work. There are three projects to choose from:
 2. regression analysis on medical data (part08)
 3. fossil data analysis (see course page / tasks section)
 
-The following instructions are for the TMC-integrated projects (part7 and part8).
-
 After you have completed 80% of points from week 6, download the exercises
 and/or notebooks from the TMC server.
 Then try to solve as many exercises as you can.
@@ -59,6 +57,7 @@ over the two categories, where category 1 has weight 2, and
 the second has weight 1. More details can be found in the Moodle.
 You must get at least grade 1 for the project work.
 
+The following instructions are for the TMC-integrated projects (part7 and part8).
 
 Sequence analysis
 -----------------
