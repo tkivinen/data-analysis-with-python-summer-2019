@@ -1,10 +1,13 @@
 Project work
 ============
 
-Choose a project work. There are two projects to choose from:
+Choose a project work. There are three projects to choose from:
 
 1. biological sequence analysis (part07)
 2. regression analysis on medical data (part08)
+3. fossil data analysis (see course page / tasks section)
+
+The following instructions are for the TMC-integrated projects (part7 and part8).
 
 After you have completed 80% of points from week 6, download the exercises
 and/or notebooks from the TMC server.
